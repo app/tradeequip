@@ -1,0 +1,49 @@
+#!/bin/bash
+# script for recoding sources from UTF-8 to KOI8-R 
+
+SRCDEST=./src
+
+function src2src {
+
+    local l=${#1}
+#    echo $l
+    for f in $1$2; do
+	local fs=${f:$l}
+	echo $f
+# $fs
+        iconv -f UTF-8 -t KOI8-R $f -o $SRCDEST/$fs
+    done
+}
+
+function tex2pdf {
+
+    local l=${#1}
+#    echo $l
+    for f in $1$2; do
+	local fs=${f:$l}
+	echo $f
+# $fs
+        pdflatex $f.tex
+    done
+}
+
+mkdir $SRCDEST
+src2src "../src/lib/" "*.cpp"
+src2src "../src/lib/" "*.h"
+cp doxygen-common.cfg doxygen_tmp.cfg
+cat doxygen-en.cfg >>doxygen_tmp.cfg
+doxygen doxygen_tmp.cfg
+
+cp doxygen-common.cfg doxygen_tmp.cfg
+cat doxygen-ru.cfg >>doxygen_tmp.cfg
+doxygen doxygen_tmp.cfg
+
+#tex2pdf ananas-script-ru
+
+rm doxygen_tmp.cfg
+rm -r -f $SRCDEST
+cd latex && make ps && cd ..
+cd latex-ru && make ps && cd ..
+cp latex/refman.ps tradeequip.ps
+cp latex-ru/refman.ps tradeequip-ru.ps
+

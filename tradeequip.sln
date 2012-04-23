@@ -1,0 +1,36 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libtradeequip", "src\lib\libtradeequip.vcproj", "{ADCF3AD4-1A96-3C67-9499-D7F613FBCD97}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libteshell", "src\libshell\libteshell.vcproj", "{FE3CBD53-CDD5-3414-8565-5B0D6484DE72}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "teshell", "src\shell\teshell.vcproj", "{3E7E4DB4-DCFE-3A8D-B70B-2C280F9FFBA1}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+		{FE3CBD53-CDD5-3414-8565-5B0D6484DE72}.0 = {ADCF3AD4-1A96-3C67-9499-D7F613FBCD97}
+		{3E7E4DB4-DCFE-3A8D-B70B-2C280F9FFBA1}.0 = {FE3CBD53-CDD5-3414-8565-5B0D6484DE72}
+		{3E7E4DB4-DCFE-3A8D-B70B-2C280F9FFBA1}.1 = {ADCF3AD4-1A96-3C67-9499-D7F613FBCD97}
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{ADCF3AD4-1A96-3C67-9499-D7F613FBCD97}.Debug.ActiveCfg = Debug|Win32
+		{ADCF3AD4-1A96-3C67-9499-D7F613FBCD97}.Debug.Build.0 = Debug|Win32
+		{ADCF3AD4-1A96-3C67-9499-D7F613FBCD97}.Release.ActiveCfg = Release|Win32
+		{ADCF3AD4-1A96-3C67-9499-D7F613FBCD97}.Release.Build.0 = Release|Win32
+		{FE3CBD53-CDD5-3414-8565-5B0D6484DE72}.Debug.ActiveCfg = Debug|Win32
+		{FE3CBD53-CDD5-3414-8565-5B0D6484DE72}.Debug.Build.0 = Debug|Win32
+		{FE3CBD53-CDD5-3414-8565-5B0D6484DE72}.Release.ActiveCfg = Release|Win32
+		{FE3CBD53-CDD5-3414-8565-5B0D6484DE72}.Release.Build.0 = Release|Win32
+		{3E7E4DB4-DCFE-3A8D-B70B-2C280F9FFBA1}.Debug.ActiveCfg = Debug|Win32
+		{3E7E4DB4-DCFE-3A8D-B70B-2C280F9FFBA1}.Debug.Build.0 = Debug|Win32
+		{3E7E4DB4-DCFE-3A8D-B70B-2C280F9FFBA1}.Release.ActiveCfg = Release|Win32
+		{3E7E4DB4-DCFE-3A8D-B70B-2C280F9FFBA1}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

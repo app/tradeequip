@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding = "Windows-1252"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="7.00"
+	Name="libtradeequip"
+	ProjectGUID="{ADCF3AD4-1A96-3C67-9499-D7F613FBCD97}">
+	<Platforms>
+		<Platform
+			Name="Win32"/>
+	</Platforms>
+	<Configurations>
+		<Configuration
+			Name="Release|Win32"
+			OutputDirectory="."
+			IntermediateDirectory="obj\"
+			ConfigurationType="2"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions="-Zm200 -w34100 -w34189"
+				Optimization="1"
+				AdditionalIncludeDirectories="$(QTDIR)\include,tmp\ui\,.,tmp\moc\,C:\Qt\3.3.6\mkspecs\win32-msvc.net"
+				PreprocessorDefinitions="QT_NO_DEBUG,NDEBUG,_WINDOWS,UNICODE,WIN32,TRADEEQUIP_EXPORT,NOQFILE,_CRT_SECURE_NO_DEPRECATE,QT_DLL,QT_THREAD_SUPPORT,NDEBUG"
+				GeneratePreprocessedFile="0"
+				ExceptionHandling="FALSE"
+				RuntimeLibrary="2"
+				BufferSecurityCheck="FALSE"
+				AssemblerListingLocation="obj\"
+				ObjectFile="obj\"
+				ProgramDataBaseFileName=".\"
+				WarningLevel="3"
+				SuppressStartupBanner="TRUE"
+				DebugInformationFormat="0"/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCLinkerTool"
+				IgnoreImportLibrary="TRUE"
+				AdditionalDependencies="qt-mt336.lib kernel32.lib user32.lib gdi32.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib imm32.lib winmm.lib wsock32.lib winspool.lib delayimp.lib"
+				OutputFile="..\..\lib\tradeequip.dll"
+				SuppressStartupBanner="TRUE"
+				AdditionalLibraryDirectories="$(QTDIR)\lib"
+				DelayLoadDLLs="comdlg32.dll,oleaut32.dll,winmm.dll,wsock32.dll,winspool.dll"
+				GenerateDebugInformation="FALSE"
+				ProgramDatabaseFile=""
+				SubSystem="2"
+				BaseAddress="0x39D00000"/>
+			<Tool
+				Name="VCMIDLTool"
+				WarningLevel="0"
+				DefaultCharType="0"
+				EnableErrorChecks="1"/>
+			<Tool
+				Name="VCPostBuildEventTool"/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="NDEBUG"/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"/>
+			<Tool
+				Name="VCWebDeploymentTool"/>
+		</Configuration>
+		<Configuration
+			Name="Debug|Win32"
+			OutputDirectory="."
+			IntermediateDirectory="Debug\"
+			ConfigurationType="2"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions="-Zm200 -w34100 -w34189"
+				Optimization="1"
+				AdditionalIncludeDirectories="$(QTDIR)\include,tmp\ui\,.,tmp\moc\,C:\Qt\3.3.6\mkspecs\win32-msvc.net"
+				PreprocessorDefinitions="_WINDOWS,UNICODE,WIN32,TRADEEQUIP_EXPORT,NOQFILE,_CRT_SECURE_NO_DEPRECATE,QT_DLL,QT_THREAD_SUPPORT"
+				GeneratePreprocessedFile="0"
+				MinimalRebuild="TRUE"
+				ExceptionHandling="FALSE"
+				RuntimeLibrary="2"
+				BufferSecurityCheck="FALSE"
+				AssemblerListingLocation="Debug\"
+				ObjectFile="Debug\"
+				ProgramDataBaseFileName=".\"
+				WarningLevel="3"
+				SuppressStartupBanner="TRUE"
+				DebugInformationFormat="3"/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCLinkerTool"
+				IgnoreImportLibrary="TRUE"
+				AdditionalDependencies="qt-mt336.lib kernel32.lib user32.lib gdi32.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib imm32.lib winmm.lib wsock32.lib winspool.lib delayimp.lib"
+				OutputFile="Debug\\tradeequip.dll"
+				SuppressStartupBanner="TRUE"
+				AdditionalLibraryDirectories="$(QTDIR)\lib"
+				GenerateDebugInformation="TRUE"
+				ProgramDatabaseFile=""
+				SubSystem="2"
+				BaseAddress="0x39D00000"/>
+			<Tool
+				Name="VCMIDLTool"
+				WarningLevel="0"
+				DefaultCharType="0"
+				EnableErrorChecks="1"/>
+			<Tool
+				Name="VCPostBuildEventTool"/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="NDEBUG"/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"/>
+			<Tool
+				Name="VCWebDeploymentTool"/>
+		</Configuration>
+	</Configurations>
+	<Files>
+		<Filter
+			Name="Source Files"
+			Filter="cpp;c;cxx;rc;def;r;odl;idl;hpj;bat">
+			<File
+				RelativePath="cmdparser.cpp">
+			</File>
+			<File
+				RelativePath="conv.cpp">
+			</File>
+			<File
+				RelativePath="estring.cpp">
+			</File>
+			<File
+				RelativePath="md5.c">
+			</File>
+			<File
+				RelativePath="preferences.cpp">
+			</File>
+			<File
+				RelativePath="qextserialbase.cpp">
+			</File>
+			<File
+				RelativePath="qextserialport.cpp">
+			</File>
+			<File
+				RelativePath="qgetopt.cpp">
+			</File>
+			<File
+				RelativePath="tebase.cpp">
+			</File>
+			<File
+				RelativePath="tecashregisterbase.cpp">
+			</File>
+			<File
+				RelativePath="teconnect.cpp">
+			</File>
+			<File
+				RelativePath="teconnectkeyboard.cpp">
+			</File>
+			<File
+				RelativePath="teconnectserial.cpp">
+			</File>
+			<File
+				RelativePath="teconnecttcp.cpp">
+			</File>
+			<File
+				RelativePath="teconnectteserver.cpp">
+			</File>
+			<File
+				RelativePath="tedisplaybase.cpp">
+			</File>
+			<File
+				RelativePath="tefactory.cpp">
+			</File>
+			<File
+				RelativePath="teglobal.cpp">
+			</File>
+			<File
+				RelativePath="teinifile.cpp">
+			</File>
+			<File
+				RelativePath="teplugin.cpp">
+			</File>
+			<File
+				RelativePath="tereaderbase.cpp">
+			</File>
+			<File
+				RelativePath="tescalesbase.cpp">
+			</File>
+			<File
+				RelativePath="tserialport.cpp">
+			</File>
+			<File
+				RelativePath="win_qextserialport.cpp">
+			</File>
+		</Filter>
+		<Filter
+			Name="Header Files"
+			Filter="h;hpp;hxx;hm;inl">
+			<File
+				RelativePath="cmdparser.h">
+			</File>
+			<File
+				RelativePath="conv.h">
+			</File>
+			<File
+				RelativePath="estring.h">
+			</File>
+			<File
+				RelativePath="md5.h">
+			</File>
+			<File
+				RelativePath="preferences.h">
+			</File>
+			<File
+				RelativePath="qextserialbase.h">
+			</File>
+			<File
+				RelativePath="qextserialport.h">
+			</File>
+			<File
+				RelativePath="qgetopt.h">
+			</File>
+			<File
+				RelativePath="tebase.h">
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing tebase.h..."
+						CommandLine="$(QTDIR)\bin\moc.exe tebase.h -o tmp\moc\moc_tebase.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
+						Outputs="tmp\moc\moc_tebase.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing tebase.h..."
+						CommandLine="$(QTDIR)\bin\moc.exe tebase.h -o tmp\moc\moc_tebase.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
+						Outputs="tmp\moc\moc_tebase.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="tecashregisterbase.h">
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing tecashregisterbase.h..."
+						CommandLine="$(QTDIR)\bin\moc.exe tecashregisterbase.h -o tmp\moc\moc_tecashregisterbase.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
+						Outputs="tmp\moc\moc_tecashregisterbase.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing tecashregisterbase.h..."
+						CommandLine="$(QTDIR)\bin\moc.exe tecashregisterbase.h -o tmp\moc\moc_tecashregisterbase.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
+						Outputs="tmp\moc\moc_tecashregisterbase.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="teconnect.h">
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing teconnect.h..."
+						CommandLine="$(QTDIR)\bin\moc.exe teconnect.h -o tmp\moc\moc_teconnect.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
+						Outputs="tmp\moc\moc_teconnect.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing teconnect.h..."
+						CommandLine="$(QTDIR)\bin\moc.exe teconnect.h -o tmp\moc\moc_teconnect.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
+						Outputs="tmp\moc\moc_teconnect.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="teconnectkeyboard.h">
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing teconnectkeyboard.h..."
+						CommandLine="$(QTDIR)\bin\moc.exe teconnectkeyboard.h -o tmp\moc\moc_teconnectkeyboard.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
+						Outputs="tmp\moc\moc_teconnectkeyboard.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing teconnectkeyboard.h..."
+						CommandLine="$(QTDIR)\bin\moc.exe teconnectkeyboard.h -o tmp\moc\moc_teconnectkeyboard.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
+						Outputs="tmp\moc\moc_teconnectkeyboard.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="teconnectserial.h">
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing teconnectserial.h..."
+						CommandLine="$(QTDIR)\bin\moc.exe teconnectserial.h -o tmp\moc\moc_teconnectserial.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
+						Outputs="tmp\moc\moc_teconnectserial.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing teconnectserial.h..."
+						CommandLine="$(QTDIR)\bin\moc.exe teconnectserial.h -o tmp\moc\moc_teconnectserial.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
+						Outputs="tmp\moc\moc_teconnectserial.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="teconnecttcp.h">
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing teconnecttcp.h..."
+						CommandLine="$(QTDIR)\bin\moc.exe teconnecttcp.h -o tmp\moc\moc_teconnecttcp.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
+						Outputs="tmp\moc\moc_teconnecttcp.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing teconnecttcp.h..."
+						CommandLine="$(QTDIR)\bin\moc.exe teconnecttcp.h -o tmp\moc\moc_teconnecttcp.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
+						Outputs="tmp\moc\moc_teconnecttcp.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="teconnectteserver.h">
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing teconnectteserver.h..."
+						CommandLine="$(QTDIR)\bin\moc.exe teconnectteserver.h -o tmp\moc\moc_teconnectteserver.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
+						Outputs="tmp\moc\moc_teconnectteserver.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing teconnectteserver.h..."
+						CommandLine="$(QTDIR)\bin\moc.exe teconnectteserver.h -o tmp\moc\moc_teconnectteserver.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
+						Outputs="tmp\moc\moc_teconnectteserver.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="tedisplaybase.h">
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing tedisplaybase.h..."
+						CommandLine="$(QTDIR)\bin\moc.exe tedisplaybase.h -o tmp\moc\moc_tedisplaybase.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
+						Outputs="tmp\moc\moc_tedisplaybase.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing tedisplaybase.h..."
+						CommandLine="$(QTDIR)\bin\moc.exe tedisplaybase.h -o tmp\moc\moc_tedisplaybase.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
+						Outputs="tmp\moc\moc_tedisplaybase.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="tefactory.h">
+			</File>
+			<File
+				RelativePath="teglobal.h">
+			</File>
+			<File
+				RelativePath="teinifile.h">
+			</File>
+			<File
+				RelativePath="teplugin.h">
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing teplugin.h..."
+						CommandLine="$(QTDIR)\bin\moc.exe teplugin.h -o tmp\moc\moc_teplugin.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
+						Outputs="tmp\moc\moc_teplugin.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing teplugin.h..."
+						CommandLine="$(QTDIR)\bin\moc.exe teplugin.h -o tmp\moc\moc_teplugin.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
+						Outputs="tmp\moc\moc_teplugin.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="tereaderbase.h">
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing tereaderbase.h..."
+						CommandLine="$(QTDIR)\bin\moc.exe tereaderbase.h -o tmp\moc\moc_tereaderbase.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
+						Outputs="tmp\moc\moc_tereaderbase.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing tereaderbase.h..."
+						CommandLine="$(QTDIR)\bin\moc.exe tereaderbase.h -o tmp\moc\moc_tereaderbase.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
+						Outputs="tmp\moc\moc_tereaderbase.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="tescalesbase.h">
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing tescalesbase.h..."
+						CommandLine="$(QTDIR)\bin\moc.exe tescalesbase.h -o tmp\moc\moc_tescalesbase.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
+						Outputs="tmp\moc\moc_tescalesbase.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Moc&apos;ing tescalesbase.h..."
+						CommandLine="$(QTDIR)\bin\moc.exe tescalesbase.h -o tmp\moc\moc_tescalesbase.cpp
+"
+						AdditionalDependencies="$(QTDIR)\bin\moc.exe"
+						Outputs="tmp\moc\moc_tescalesbase.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="tserialport.h">
+			</File>
+			<File
+				RelativePath="win_qextserialport.h">
+			</File>
+		</Filter>
+		<Filter
+			Name="Generated MOC Files"
+			Filter="cpp;c;cxx;moc">
+			<File
+				RelativePath="tmp\moc\moc_tebase.cpp">
+			</File>
+			<File
+				RelativePath="tmp\moc\moc_tecashregisterbase.cpp">
+			</File>
+			<File
+				RelativePath="tmp\moc\moc_teconnect.cpp">
+			</File>
+			<File
+				RelativePath="tmp\moc\moc_teconnectkeyboard.cpp">
+			</File>
+			<File
+				RelativePath="tmp\moc\moc_teconnectserial.cpp">
+			</File>
+			<File
+				RelativePath="tmp\moc\moc_teconnecttcp.cpp">
+			</File>
+			<File
+				RelativePath="tmp\moc\moc_teconnectteserver.cpp">
+			</File>
+			<File
+				RelativePath="tmp\moc\moc_tedisplaybase.cpp">
+			</File>
+			<File
+				RelativePath="tmp\moc\moc_teplugin.cpp">
+			</File>
+			<File
+				RelativePath="tmp\moc\moc_tereaderbase.cpp">
+			</File>
+			<File
+				RelativePath="tmp\moc\moc_tescalesbase.cpp">
+			</File>
+		</Filter>
+		<Filter
+			Name="Translations Files"
+			Filter="ts"
+			ParseFiles="FALSE">
+			<File
+				RelativePath="..\..\translations\tradeequip-en.ts">
+			</File>
+			<File
+				RelativePath="..\..\translations\tradeequip-ru.ts">
+			</File>
+		</Filter>
+	</Files>
+	<Globals>
+	</Globals>
+</VisualStudioProject>
